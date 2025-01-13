@@ -1,0 +1,37 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "left main right"
+    "footer footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 200px 1fr 200px;
+  height: 100vh;
+  margin: 0;
+}
+header {
+  grid-area: header;
+  background: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+}
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+footer {
+  grid-area: footer;
+  background: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+}
+.left {
+  grid-area: left;
+  background: #e9ecef;
+  padding: 1rem;
+}
+.right {
+  grid-area: right;
+  background: #e9ecef;
+  padding: 1rem;
+}
